@@ -21,7 +21,7 @@ const getStories = async (req, res, n) => {
     "food",
     "health and fitness",
     "travel",
-    "movie",
+    "movies",
     "education",
   ];
   const { userId, category, catLimit, cat } = req.query;
