@@ -12,10 +12,8 @@ const db = require("./src/config/db.js");
 const userRoutes = require("./src/routes/userRoutes.js");
 const storyRoutes = require("./src/routes/storyRoutes.js");
 
-const corsOptions = {
-  origin: "*",
-};
-app.use(cors(corsOptions));
+
+app.use(cors());
 app.use(express.json());
 app.use(cookieParser());
 
