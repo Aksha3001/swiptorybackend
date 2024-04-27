@@ -13,7 +13,6 @@ const userRoutes = require("./src/routes/userRoutes.js");
 const storyRoutes = require("./src/routes/storyRoutes.js");
 
 const corsOptions = {
-  credentials: true,
   origin: "*",
 };
 app.use(cors(corsOptions));
