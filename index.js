@@ -12,9 +12,12 @@ const db = require("./src/config/db.js");
 const userRoutes = require("./src/routes/userRoutes.js");
 const storyRoutes = require("./src/routes/storyRoutes.js");
 
+const allowedOrigin =['http://localhost:5173','https://swiptoryfrontend.onrender.com']
+
 app.use(cors({
-  origin: 'http://localhost:5173', // Allow requests from this origin
-  credentials: true // Allow credentials (cookies, authorization headers)
+  origin: allowedOrigin, // Allow requests from this origin
+  credentials: true, // Allow credentials (cookies, authorization headers)
+  allowedHeaders: ['Authorization', 'Content-Type'],
 }));
 
 app.use(cookieParser());
