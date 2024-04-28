@@ -17,9 +17,10 @@ app.use(cors({
   credentials: true // Allow credentials (cookies, authorization headers)
 }));
 
+app.use(cookieParser());
+
 // app.use(cors());
 app.use(express.json());
-app.use(cookieParser());
 
 
 //Routes
